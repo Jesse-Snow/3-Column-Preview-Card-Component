@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* 
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-syan: hsl(184, 100%, 22%);
+  --very-dark-syan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  font-size:15px;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background-color: var(--very-light-gray);
+}
+
+.cardComponent--bk-orange {
+  background-color:var(--bright-orange);
+  border-radius: 0.5rem 0 0 0.5rem ;
+}
+.cardComponent--bk-orange > .cardComponent__btn { color:var(--bright-orange);}
+.cardComponent--bk-dkSyan { background-color: var(--dark-syan);}
+.cardComponent--bk-dkSyan > .cardComponent__btn { color:var(--dark-syan);}
+.cardComponent--bk-vrDkSyan { 
+  background-color: var(--very-dark-syan);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.cardComponent--bk-vrDkSyan > .cardComponent__btn { color:var(--very-dark-syan);}
+
+.cards {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+.cardComponent {
+  padding:4rem 2.5rem;
+  width:20rem;
+}
+
+.cardComponent__header {
+  color:var(--very-light-gray);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size:2.5rem;
+}
+
+.cardComponent__txt {
+  color:var(--transparent-white);
+  line-height: 1.4rem;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.cardComponent__btn {
+  text-decoration: none;
+  background-color:var(--very-light-gray);
+  border-radius: 2rem;
+  padding:1rem 2rem;
+  display:inline-block;
+  margin-top:3rem;
+
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+@media only screen and (max-width: 700px) {
+  .cards{ 
+    flex-direction: column;
+    height:100%;
+    margin:3rem 0;
+  }
+  .cardComponent--bk-orange {
+    background-color:var(--bright-orange);
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .cardComponent--bk-vrDkSyan { 
+    background-color: var(--very-dark-syan);
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  .cardComponent__btn { 
+    margin-top:1rem;
+  }
+}
