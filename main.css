@@ -22,18 +22,36 @@ body {
   background-color: var(--very-light-gray);
 }
 
+
+/* Card Backgorund Color */
+
 .cardComponent--bk-orange {
   background-color:var(--bright-orange);
   border-radius: 0.5rem 0 0 0.5rem ;
 }
-.cardComponent--bk-orange > .cardComponent__btn { color:var(--bright-orange);}
 .cardComponent--bk-dkSyan { background-color: var(--dark-syan);}
-.cardComponent--bk-dkSyan > .cardComponent__btn { color:var(--dark-syan);}
 .cardComponent--bk-vrDkSyan { 
   background-color: var(--very-dark-syan);
   border-radius: 0 0.5rem 0.5rem 0;
 }
-.cardComponent--bk-vrDkSyan > .cardComponent__btn { color:var(--very-dark-syan);}
+
+/* Button States */
+
+.cardComponent--bk-orange > .cardComponent__btn:hover { 
+  background-color:var(--very-light-gray);
+  color:var(--bright-orange);
+}
+.cardComponent--bk-dkSyan > .cardComponent__btn:hover{
+  background-color:var(--very-light-gray);
+  color:var(--dark-syan);
+}
+.cardComponent--bk-vrDkSyan > .cardComponent__btn:hover
+{ 
+  background-color:var(--very-light-gray);
+  color:var(--very-dark-syan);
+}
+
+/* Cards */
 
 .cards {
   display:flex;
@@ -61,14 +79,21 @@ body {
 
 .cardComponent__btn {
   text-decoration: none;
-  background-color:var(--very-light-gray);
   border-radius: 2rem;
   padding:1rem 2rem;
   display:inline-block;
   margin-top:3rem;
-
   font-family: 'Lexend Deca', sans-serif;
+  border:solid var(--very-light-gray) 2px;
+  color:var(--very-light-gray);
 }
+
+.cardComponent__btn:hover {
+  background-color:var(--very-light-gray);
+  color:var(--bright-orange);
+}
+
+/* Mobile */
 
 @media only screen and (max-width: 700px) {
   .cards{ 
