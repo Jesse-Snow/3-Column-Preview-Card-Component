@@ -31,8 +31,6 @@ Users should be able to:
 
 <!-- Missing URL preview  -->
 
-## My process
-
 ### Built with
 
 - CSS custom properties
