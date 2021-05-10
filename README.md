@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-<!-- Missing URL preview  -->
+<a href="https://jesse-snow.github.io/3-Column-Preview-Card-Component/" target="_blank">Preview</a>
 
 ### Built with
 
